@@ -72,7 +72,7 @@ return [
                 'index' => 10000
             ],
             'contact' => [
-                'comment' => 'ex: {"phone":"","email":"","map":""}',
+                'comment' => 'ex: {"phone":"","email":"","map":"","address":""}',
                 'type' => 'TEXT',
                 'attrs' => [],
                 'index' => 11000

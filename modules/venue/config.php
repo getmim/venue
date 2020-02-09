@@ -2,7 +2,7 @@
 
 return [
     '__name' => 'venue',
-    '__version' => '0.0.1',
+    '__version' => '0.0.2',
     '__git' => 'git@github.com:getmim/venue.git',
     '__license' => 'MIT',
     '__author' => [
@@ -99,7 +99,7 @@ return [
                 ],
                 'open_days' => [
                     'type' => 'multiple-enum',
-                    'separator' => ',',
+                    'separator' => 'json',
                     'enum' => 'venue.open_days',
                     'vtype' => 'int'
                 ],
