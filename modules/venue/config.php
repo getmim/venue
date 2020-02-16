@@ -2,7 +2,7 @@
 
 return [
     '__name' => 'venue',
-    '__version' => '0.0.2',
+    '__version' => '0.1.0',
     '__git' => 'git@github.com:getmim/venue.git',
     '__license' => 'MIT',
     '__author' => [
@@ -52,7 +52,8 @@ return [
                 5 => 'Friday',
                 6 => 'Saturday',
                 7 => 'Sunday'
-            ]
+            ],
+            'content-pricing.type' => ['venue' => 'Venue']
         ]
     ],
     'libFormatter' => [
@@ -120,6 +121,38 @@ return [
                 ],
                 'created' => [
                     'type' => 'date'
+                ]
+            ],
+            'content-pricing' => [
+                'object' => [
+                    'cases' => [
+                        'venue' => [
+                            'model' => [
+                                'name' => 'Venue\\Model\\Venue',
+                                'field' => 'id'
+                            ],
+                            'format' => 'venue'
+                        ]
+                    ]
+                ]
+            ]
+        ]
+    ],
+    'contentPricing' => [
+        'active' => [
+            'venue' => true
+        ],
+        'objects' => [
+            'venue' => [
+                'model' => 'Venue\\Model\\Venue',
+                'format' => 'venue',
+                'fields' => [
+                    'id'        => 'id',
+                    'user'      => 'user',
+                    'title'     => 'title',
+                    'created'   => 'created',
+                    'published' => 'created',
+                    'status'    => '$Published'
                 ]
             ]
         ]
