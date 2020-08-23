@@ -105,7 +105,8 @@ return [
                     'vtype' => 'int'
                 ],
                 'prices' => [
-                    'type' => 'json'
+                    'type' => 'json',
+                    'format' => 'venue-prices'
                 ],
                 'contact' => [
                     'type' => 'json'
@@ -121,6 +122,17 @@ return [
                 ],
                 'created' => [
                     'type' => 'date'
+                ]
+            ],
+            'venue-prices' => [
+                'currency' => [
+                    'type' => 'text'
+                ],
+                'min' => [
+                    'type' => 'number'
+                ],
+                'max' => [
+                    'type' => 'number'
                 ]
             ],
             'content-pricing' => [
