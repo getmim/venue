@@ -88,20 +88,29 @@ return [
                 'attrs' => [],
                 'index' => 13000
             ],
+            'status' => [
+                'type' => 'TINYINT',
+                'attrs' => [
+                    'null' => false,
+                    'unsigned' => true,
+                    'default' => 1
+                ],
+                'index' => 14000
+            ],
             'updated' => [
                 'type' => 'TIMESTAMP',
                 'attrs' => [
                     'default' => 'CURRENT_TIMESTAMP',
                     'update' => 'CURRENT_TIMESTAMP'
                 ],
-                'index' => 14000
+                'index' => 15000
             ],
             'created' => [
                 'type' => 'TIMESTAMP',
                 'attrs' => [
                     'default' => 'CURRENT_TIMESTAMP'
                 ],
-                'index' => 15000
+                'index' => 16000
             ]
         ]
     ]

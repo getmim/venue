@@ -53,7 +53,12 @@ return [
                 6 => 'Saturday',
                 7 => 'Sunday'
             ],
-            'content-pricing.type' => ['venue' => 'Venue']
+            'content-pricing.type' => ['venue' => 'Venue'],
+            'venue.status' => [
+                0 => 'Deleted',
+                1 => 'Draft',
+                2 => 'Published'
+            ]
         ]
     ],
     'libFormatter' => [
@@ -113,6 +118,10 @@ return [
                 ],
                 'socials' => [
                     'type' => 'json'
+                ],
+                'status' => [
+                    'type' => 'enum',
+                    'enum' => 'venue.status'
                 ],
                 'meta' => [
                     'type' => 'json'
