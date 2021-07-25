@@ -76,13 +76,10 @@ return [
                     'type' => 'number'
                 ],
                 'user' => [
-                    'type' => 'object',
-                    'model' => [
-                        'name'  => 'LibUser\\Library\\Fetcher',
-                        'field' => 'id',
-                        'type'  => 'number'
-                    ],
-                    'format' => 'user'
+                    'type' => 'user'
+                ],
+                'publisher' => [
+                    'type' => 'user'
                 ],
                 'title' => [
                     'type' => 'text'
@@ -125,6 +122,9 @@ return [
                 ],
                 'meta' => [
                     'type' => 'json'
+                ],
+                'published' => [
+                    'type' => 'date'
                 ],
                 'updated' => [
                     'type' => 'date'

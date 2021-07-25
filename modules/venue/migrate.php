@@ -20,6 +20,13 @@ return [
                 ],
                 'index' => 2000
             ],
+            'publisher' => [
+                'type' => 'INT',
+                'attrs' => [
+                    'unsigned' => TRUE
+                ],
+                'index' => 2500
+            ],
             'title' => [
                 'type' => 'VARCHAR',
                 'length' => 150,
@@ -96,6 +103,13 @@ return [
                     'default' => 1
                 ],
                 'index' => 14000
+            ],
+            'published' => [
+                'type' => 'DATETIME',
+                'attrs' => [
+                    'null' => true
+                ],
+                'index' => 14500
             ],
             'updated' => [
                 'type' => 'TIMESTAMP',
